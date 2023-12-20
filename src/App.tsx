@@ -1,33 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useSelector } from 'react-redux'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const animals = useSelector((state) => state.animals);
+  console.log(animals)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='container mt-3'>
+        <h2>Animals List</h2>
+        <button>Create</button>
+        <table className='table'>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Color</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {animals.map((animal, index) => (
+              <tr key={index}>
+                <td>{animal.id}</td>
+                <td>{animal.name}</td>
+                <td>{animal.color}</td>
+                <td>
+                  <button>Edit</button>
+                  <button>Delete</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
