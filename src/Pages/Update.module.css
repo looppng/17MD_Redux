@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.header {
+    font-size: 40px;
+}
+
+.card {
+    background-color: yellow;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.input {
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+    &::placeholder {
+        font-size: 14px;
+        padding: 0.3rem;
+    }
+}
+
+.button {
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: blue;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: 0.7rem;
+
+    &:hover {
+        background-color: blue;
+        color: white;
+        border: 1px solid white;
+    }
+}

@@ -1,0 +1,114 @@
+.heading {
+    font-size: 40px;
+}
+
+.wrapper {
+    border-radius: 5px;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+}
+
+.action {
+    display: flex;
+    gap: 1rem
+}
+
+.name {
+    font-size: 35px;
+}
+
+.color {
+    font-size: 25px;
+}
+
+.secondary {
+    font-size: 25px;
+    margin-top: 0.5rem;
+}
+
+.sort {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.6rem;
+}
+
+.asc, .desc {
+    background-color: darkslategray;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        color: darkslategray;
+        border: 1px solid darkslategray;
+    }
+}
+
+.create {
+    background-color: green;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        color: green;
+        border: 1px solid green
+    }
+}
+
+.deleteButton {
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: red;
+    color: white;
+}
+
+.updateButton {
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: blue;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.updateButton:hover {
+    background-color: blue;
+    color: white;
+}

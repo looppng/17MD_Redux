@@ -1,26 +1,28 @@
 export type AnimalState = {
 	id: number,
 	name: string,
-	color: string
+	color: string,
+	image: string,
 }
-
-
 
 
 export const animalList = [
 	{
-		name: 'elephant',
-		color: 'grey',
-		id: 1
+		name: 'Elephant',
+		color: 'Grey',
+		id: 1,
+		image: 'https://picsum.photos/201'
 	},
 	{
-		name: 'cheetah',
-		color: 'snow',
-		id: 2
+		name: 'Cheetah',
+		color: 'Snow',
+		id: 2,
+		image: 'https://picsum.photos/200'
 	},
 	{
-		name: 'snake',
-		color: 'red',
-		id: 3
+		name: 'Snake',
+		color: 'Red',
+		id: 3,
+		image: 'https://picsum.photos/202'
 	}
 ]
